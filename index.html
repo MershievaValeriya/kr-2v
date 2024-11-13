@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система учета расходов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Учет расходов</h1>
+    </header>
+    <main class="container">
+        <div id="add-expense-form"></div>
+        
+        <section class="expense-list">
+            <h2>Список расходов</h2>
+            <div class="filter-section">
+                <label for="filter-category">Фильтр по категории:</label>
+                <select id="filter-category">
+                    <option value="все">Все</option>
+                    <option value="еда">Еда</option>
+                    <option value="транспорт">Транспорт</option>
+                    <option value="развлечения">Развлечения</option>
+                </select>
+            </div>
+            <div class="book-list">
+                <ul id="expenses-list">
+                    <!-- Список расходов будет появляться здесь -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
